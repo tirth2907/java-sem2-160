@@ -6,12 +6,13 @@ public class S1{
 		System.out.println("give a word :");
 		String s1 = sc.nextLine();
 		int x = s1.length();
-		char ch = s1.charAt(x);
-		for (int i = 1; i<=x;i++)
+		
+		for (int i = 0; i<=x-1;i++)
 		{
-			for (int j=1;j<=i;j++)
+			for (int j=0;j<=i;j++)
 			{
-				System.out.println(ch);
+				char ch = s1.charAt(j);
+				System.out.print(ch);
 			}
 			System.out.println();
 		}
